@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/main.dir/test.cpp.o -o main  /usr/lib/libfmt.so.8.1.1 -Wl,--as-needed 

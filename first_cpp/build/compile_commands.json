@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/jienow/Development/CPP_DEVELOPMENT/first_cpp/build",
+  "command": "/usr/bin/g++ -DFMT_HEADER_ONLY -DFMT_LOCALE -DFMT_SHARED  -g -o CMakeFiles/main.dir/test.cpp.o -c /home/jienow/Development/CPP_DEVELOPMENT/first_cpp/test.cpp",
+  "file": "/home/jienow/Development/CPP_DEVELOPMENT/first_cpp/test.cpp"
+}
+]
