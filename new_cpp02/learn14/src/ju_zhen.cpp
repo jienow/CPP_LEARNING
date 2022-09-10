@@ -7,7 +7,7 @@
 
 vector<vector<int>> ju_zhen::init_read(string file) {
     fstream ofs;
-    ofs.open("/home/jienow/Development/CPP_DEVELOPMENT/CPP_LEARNING/new_cpp02/learn14/shuju/" +
+    ofs.open(/*"/home/jienow/Development/CPP_DEVELOPMENT/CPP_LEARNING/new_cpp02/learn14/shuju/" +*/
              file,
              ios::in);
     if(!ofs.is_open()){
