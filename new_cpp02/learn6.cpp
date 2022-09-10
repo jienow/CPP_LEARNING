@@ -93,10 +93,21 @@
 //    return 0;
 //}
 
+//#include <iostream>
+// using namespace std;
+// int main() {
+//    if (is_signed<char>::value)
+//        cout << "x86" << endl;
+//    return 0;
+//}
+
 #include <iostream>
+#include <vector>
 using namespace std;
+
 int main() {
-    if (is_signed<char>::value)
-        cout << "x86" << endl;
+    string name{"hello"};
+    cout << name.length() << endl;
+    cout << name.size() << endl;
     return 0;
 }
