@@ -16,6 +16,8 @@ using namespace std;
 
 class ju_zhen {
 public:
+    void zhuan_zhi(vector<vector<double>> &v);
+
     int ju_zhen_ji_suan(vector<vector<int>> &v);
 
     vector<vector<double>> ban_sui_ju_zhen(vector<vector<int>> &v);
@@ -23,6 +25,9 @@ public:
     void number_mult_ju_zhen(vector<vector<double>> &v, double val);
 
     vector<vector<int>> init_read(string file);
+
+    void print_ju_zhen(vector<vector<double>> &v);
+
 private:
 
     int dai_shu_yu_zi_shi(vector<vector<int>> &mat, int x, int y);
@@ -31,7 +36,7 @@ private:
 
     int fu_hao(int x, int y);
 
-
+    int dai_shu_yu_zi_shi_not_mat_x_y(vector<vector<int>> &mat, int x, int y);
 
     int yu_zi_shi(vector<vector<int>> &mat, int x, int y);
 };

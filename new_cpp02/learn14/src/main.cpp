@@ -1,6 +1,5 @@
 #include <iostream>
-#include "ju_zhen.h"
-#include <iomanip>
+#include "../include/ju_zhen.h"
 
 int main(int argc, char *argv[]) {
 //    vector<vector<int>> v{
@@ -24,12 +23,24 @@ int main(int argc, char *argv[]) {
     auto v = juZhen.init_read(string{argv[1]});
 
     double ju_zhen_dao_shu = 1.0 / juZhen.ju_zhen_ji_suan(v);
+
     auto ban_sui_ju_zhen = juZhen.ban_sui_ju_zhen(v);
+
+    juZhen.zhuan_zhi(ban_sui_ju_zhen);
+
+    // debug ---------------------------------
+
+//    for (auto &hang: ban_sui_ju_zhen) {
+//        for (auto &val: hang)
+//            cout << internal << setw(3) << val << "  ";
+//        cout << endl;
+//    }
+
+    // debug end ---------------------------------
+
     juZhen.number_mult_ju_zhen(ban_sui_ju_zhen, ju_zhen_dao_shu);
-    for (auto &hang: ban_sui_ju_zhen) {
-        for (auto &val: hang)
-            cout << left << setw(6) << val;
-        cout << endl;
-    }
+
+    juZhen.print_ju_zhen(ban_sui_ju_zhen);
+
     return 0;
 }
